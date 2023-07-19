@@ -13,7 +13,7 @@
 
 
 header{
-    background-color: #ff6666;
+    background-color: #3b5998;
     padding: 2vmin 0;
     font-family: 'Chilanka', cursive;
 }
@@ -21,19 +21,20 @@ header{
 header h1{
     text-align: center;
     font-size: 4em;
-    color: #c1e7e1;
+    color: wheat;
 }
 
 body{
-    background-color: #4DB380;
+    background-color: ;
     font-family: 'Baloo Tamma 2', cursive;
 }
 
 .score-board{
-    color: #fee11a;
+    color: red;
     text-align: center;
     font-size: 2.5em;
     padding: 2vmin;
+    border-radius: 20px;
 }
 
 .score-board .userscore, .score-board .compscore, .score-board span{
@@ -57,13 +58,54 @@ body{
 
 .score-board span{
     font-size: 2em;
-    color: #fff8e7
+    color: #f9af03
 
     ;
+}
+.select-box{
+    border: 5px solid;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+    border-radius: 20px;
+    background-color: black;
+    
+
+}
+.box-lft{
+    width: 50%;
+    border: 2px solid;
+   background-color: gray;
+   text-align: center;
+   margin: 5px;
+   overflow: hidden;
+  position: relative;
+  border-radius: 0.5rem;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  background-color: #fff;
+  height: 10rem;
+}
+.box-rgt{
+    width: 50%;
+    border: 2px solid;
+   background-color: gray;
+   text-align: center;
+   height: 10rem;
+   margin: 5px;
+   overflow: hidden;
+  position: relative;
+  border-radius: 0.5rem;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  background-color: #fff;
 }
 
 
 .result{
+  
+    flex-direction: column;
     text-align: center;
     margin: 1vmin auto 3vmin auto;
     font-size: 2em;
@@ -101,3 +143,83 @@ body{
 .name{
     color: #e7e3ff;
 }
+
+.lds-spinner {
+    color: official;
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+  }
+  .lds-spinner div {
+    transform-origin: 40px 40px;
+    animation: lds-spinner 1.2s linear infinite;
+  }
+  .lds-spinner div:after {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 3px;
+    left: 37px;
+    width: 6px;
+    height: 18px;
+    border-radius: 20%;
+    background: black;
+  }
+  .lds-spinner div:nth-child(1) {
+    transform: rotate(0deg);
+    animation-delay: -1.1s;
+  }
+  .lds-spinner div:nth-child(2) {
+    transform: rotate(30deg);
+    animation-delay: -1s;
+  }
+  .lds-spinner div:nth-child(3) {
+    transform: rotate(60deg);
+    animation-delay: -0.9s;
+  }
+  .lds-spinner div:nth-child(4) {
+    transform: rotate(90deg);
+    animation-delay: -0.8s;
+  }
+  .lds-spinner div:nth-child(5) {
+    transform: rotate(120deg);
+    animation-delay: -0.7s;
+  }
+  .lds-spinner div:nth-child(6) {
+    transform: rotate(150deg);
+    animation-delay: -0.6s;
+  }
+  .lds-spinner div:nth-child(7) {
+    transform: rotate(180deg);
+    animation-delay: -0.5s;
+  }
+  .lds-spinner div:nth-child(8) {
+    transform: rotate(210deg);
+    animation-delay: -0.4s;
+  }
+  .lds-spinner div:nth-child(9) {
+    transform: rotate(240deg);
+    animation-delay: -0.3s;
+  }
+  .lds-spinner div:nth-child(10) {
+    transform: rotate(270deg);
+    animation-delay: -0.2s;
+  }
+  .lds-spinner div:nth-child(11) {
+    transform: rotate(300deg);
+    animation-delay: -0.1s;
+  }
+  .lds-spinner div:nth-child(12) {
+    transform: rotate(330deg);
+    animation-delay: 0s;
+  }
+  @keyframes lds-spinner {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  

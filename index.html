@@ -30,15 +30,20 @@
     </header>
     <main>
       <div class="score-board">
-        <div class="userscore">USER</div>
+        <div class="userscore">Your Score </div>
         <span id="userScoreVal">0</span> : <span id="compScoreVal">0</span>
-        <div class="compscore">COMP</div>
+        <div class="compscore">Comp Score</div>
       </div>
 
       <div class="result">
-        <p id="result-user-stat">User:</p>
-        <p id="result-comp-stat">Computer:</p>
-        <p id="result-final-stat">Winner:</p>
+        <div class="select-box">
+          <div class="box-lft"> <p id="result-user-stat">You: <p style="color: brown; font-size: 1.5em;" id="usr_slctn"></p> </p></div>
+          <div class="box-rgt">  <p id="result-comp-stat">Computer:<p style="color: brown; font-size: 1.5em;" id="comp_slctn"></p> </p> </div>
+       
+      
+        </div>
+        <div style="margin-top: 10px;" class="lds-spinner" id="ring" ><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+         <p id="result-final-stat">Winner: <p style="color: brown;" id="result"></p></p>
       </div>
 
       <div class="choices">
@@ -70,6 +75,6 @@
       crossorigin="anonymous"
     ></script>
 
-    <script src="js/main.js"></script>
+    <script src="./main.js"></script>
   </body>
 </html>
