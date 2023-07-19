@@ -1,0 +1,5 @@
+let userScoreVal = document.getElementById(userScoreVal)
+let compScoreVal = document.getElementById(compScoreVal)
+let result_user_stat = document.getElementById(result-user-stat)
+let result_comp_stat = document.getElementById(result-comp-stat)
+let result_final_stat= document.getElementById(result-final-stat)
